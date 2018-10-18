@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Варианты установки opencv в проект на java
 ### Основные моменты
