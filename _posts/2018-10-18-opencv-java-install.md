@@ -24,7 +24,7 @@ OpenCV.loadShared();
 - Заливаем файл so в проект (обычно в resources java-проекта заливал) из opencv папки (/usr/local/share/OpenCV/java/libopencv_java330.so)
 - Подключаем перед использованием вот так: 
 
-https://github.com/adamheinrich/native-utils
+[native-utils](https://github.com/adamheinrich/native-utils)
 
 
 ```
