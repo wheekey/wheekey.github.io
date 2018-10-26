@@ -54,5 +54,14 @@
     </div>
 
     {% include analytics.html %}
+  <script>
+      SimpleJekyllSearch({
+          search-input: document.getElementById('search-input'),
+          resultsContainer: document.getElementById('results-container'),
+          json: '/search.json',
+          searchResultTemplate: '<li><a href="{{ site.url }}{url}">{title}</a></li>'
+      })
+  </script>
+
   </body>
 </html>
