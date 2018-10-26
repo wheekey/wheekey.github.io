@@ -19,3 +19,8 @@ git add .gitignore
 git commit -m "Removed .idea files"
 git push origin <branch>
 ```
+
+#### В случае с добавленным файлом, но ни разу не коммиченным, то делаем так:
+```
+git reset <file>
+```
