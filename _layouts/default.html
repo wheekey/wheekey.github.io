@@ -13,9 +13,16 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+
   </head>
 
   <body>
+  <!-- HTML elements for search -->
+  <input type="text" id="search-input" placeholder="Search blog posts..">
+  <ul id="results-container"></ul>
+
+
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
