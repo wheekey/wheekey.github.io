@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## [Как включить создание токенов для API](https://magento.stackexchange.com/questions/178843/cannot-create-oauth-consumer):
 
