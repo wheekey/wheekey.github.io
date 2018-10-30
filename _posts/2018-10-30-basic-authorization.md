@@ -2,6 +2,7 @@
 published: true
 ---
 ## Если нужна авторизация на сайте при запросе, то заголовки нужно добавить следующие:
+
 ```
 $ch = curl_init("https://example.com");
 curl_setopt($ch, CURLOPT_USERPWD, "$usernameAuthentification:$passwordAuthentification");
