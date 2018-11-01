@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Прост пример, как делать строка в строке по бутстрапу (Ознакомиться подробнее можно [здесь](https://stackoverflow.com/questions/42556695/multiple-rows-inside-a-row-with-bootstrap-4))
 
