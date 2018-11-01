@@ -16,4 +16,4 @@ published: false
 <div class="black_box"></div>
 ```
 
-### Подробнее [тут](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+### Подробнее [тут](https://stackoverflow.com/questions/41590469/how-to-create-a-inner-border-for-a-box-in-html/41590707). 
