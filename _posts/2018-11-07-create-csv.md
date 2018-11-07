@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Creating a CSV file using static data
 ```
