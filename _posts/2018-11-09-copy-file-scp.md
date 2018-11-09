@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Copy file through scp PHP
 
@@ -12,5 +12,3 @@ ssh2_auth_password($connection, 'user', 'passwd');
 
 ssh2_scp_send($connection, '/var/tmp/README.md', '/home/README.md', 0777);
 ```
-
-
