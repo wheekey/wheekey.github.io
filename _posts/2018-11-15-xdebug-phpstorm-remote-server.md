@@ -93,7 +93,5 @@ xdebug.var_display_max_depth => 3 => 3
 4. Далее настроить phpstorm: Settings->Languages & Frameworks->PHP->Debug![Screenshot from 2018-11-15 17-06-21.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-06-21.png)
 ![Screenshot from 2018-11-15 17-06-15.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-06-15.png) ![Screenshot from 2018-11-15 17-06-11.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-06-11.png) ![Screenshot from 2018-11-15 17-05-55.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-05-55.png) ![Screenshot from 2018-11-15 17-05-38.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-05-38.png)
  ![Screenshot from 2018-11-15 17-05-30.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-05-30.png) ![Screenshot from 2018-11-15 17-05-21.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-05-21.png)
-
-
-
-
+5. Установить SSH tunnel: ssh -4 -R 8888:localhost:8888 root@host
+6. Если настраивается дебаг cli скрипта, то в PHPSTORM нужно настроить PHP Script. Если дебажатся http запросы, то настраиваем PHP Web Page. После изменения порта, важно перезапускать в PHPSTORM **Stop/Start Listening for PHP Debug Connections**
