@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Алгоритм действий, если нужно дебажить cli скрипт удаленно
 
@@ -91,5 +91,9 @@ xdebug.var_display_max_depth => 3 => 3
 ```
 3. Далее перезагрузить php-fpm
 4. Далее настроить phpstorm: Settings->Languages & Frameworks->PHP->Debug![Screenshot from 2018-11-15 17-06-21.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-06-21.png)
+![Screenshot from 2018-11-15 17-06-15.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-06-15.png) ![Screenshot from 2018-11-15 17-06-11.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-06-11.png) ![Screenshot from 2018-11-15 17-05-55.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-05-55.png) ![Screenshot from 2018-11-15 17-05-38.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-05-38.png)
+ ![Screenshot from 2018-11-15 17-05-30.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-05-30.png) ![Screenshot from 2018-11-15 17-05-21.png]({{site.baseurl}}/images/Screenshot from 2018-11-15 17-05-21.png)
+
+
 
 
