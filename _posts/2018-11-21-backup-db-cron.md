@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Взято отсюда [BASH BACKUP ROTATION SCRIPT](https://nicaw.wordpress.com/2013/04/18/bash-backup-rotation-script/ "BASH BACKUP ROTATION SCRIPT")
 
@@ -92,5 +92,3 @@ bash backup.sh
 ```
 20 17 * * * /CONTENT/hdd/backups/picfind/cron_daily.sh
 ```
-
-
