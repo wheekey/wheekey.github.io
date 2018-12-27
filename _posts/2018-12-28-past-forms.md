@@ -18,3 +18,13 @@ published: false
 - **Прошлая привычка или состояние.**
 
 	He **used to go** / **went** to school on foot.
+    
+### **Past Continuous**
+- **Два или больше одновременных действий в прошлом.**
+
+	While I **was sunbathing**, Tim **was swimming**.
+- **Действия в процессе в установленное время в прошлом**
+
+	He **was playing** tennis at 4:30pm yesterday.
+- **Прошлое действие в процессе прерванное другим процессом. Более длительное действие Past Continuous, более короткое - Past Simple**
+	While I **was getting dressed** the bell **rang**.
