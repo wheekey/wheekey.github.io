@@ -17,4 +17,4 @@ published: false
 	Shakespeare **wrote** a lot of plays.
 - **Прошлая привычка или состояние.**
 
-He **used to go** / **went** to school on foot.
+	He **used to go** / **went** to school on foot.
