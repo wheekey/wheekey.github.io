@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 \#english
 
@@ -28,3 +28,26 @@ published: false
 	He **was playing** tennis at 4:30pm yesterday.
 - **Прошлое действие в процессе прерванное другим процессом. Более длительное действие Past Continuous, более короткое - Past Simple**
 	While I **was getting dressed** the bell **rang**.
+    
+### **Past Perfect**
+- **Прошлое действие, которое произошло до другого прошлого действия или до специфического времени в прошлом**
+	He **had left** by the time I got there. (or by 8:15 pm)
+    
+- **Завершенное прошлое действие, которое имеет видимые результаты **
+	She was sad because she **had filed** the test.
+    
+- **Past Perfect - это эквивалент Present Perfect, только в прошлом**
+	He can't find his watch. He has lost it. He couldn't find his watch. He **had lost** it.
+   
+### **Past Perfect Continuous**
+
+- **Подчеркивает длительность действия, которое начинается и заканчивается в прошлом до другого прошлого действия или установленного времени в прошлом**
+	She **had been working** as a clerk **for 10 years** before she resigned.
+    
+- **Прошлое действие определенной длительности, которое имело видимые результаты в прошлом.**
+	They were wet because they **had been walking** in the rain.
+    
+- **Past Perfect Continuius - это Present Perfect Continuous, только в прошлом.**
+    
+
+    
