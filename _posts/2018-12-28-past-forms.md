@@ -42,9 +42,11 @@ published: true
 ### **Past Perfect Continuous**
 
 - **Подчеркивает длительность действия, которое начинается и заканчивается в прошлом до другого прошлого действия или установленного времени в прошлом**
+
 	She **had been working** as a clerk **for 10 years** before she resigned.
     
 - **Прошлое действие определенной длительности, которое имело видимые результаты в прошлом.**
+
 	They were wet because they **had been walking** in the rain.
     
 - **Past Perfect Continuius - это Present Perfect Continuous, только в прошлом.**
