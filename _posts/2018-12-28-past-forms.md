@@ -50,6 +50,7 @@ published: true
 	They were wet because they **had been walking** in the rain.
     
 - **Past Perfect Continuius - это Present Perfect Continuous, только в прошлом.**
+
 (She is going to the doctor. Her leg has been aching for two days.)
 She went to the doctor. Her leg **had been aching** for two days.
     
