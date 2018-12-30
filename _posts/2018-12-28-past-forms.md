@@ -33,7 +33,7 @@ published: true
 - **Прошлое действие, которое произошло до другого прошлого действия или до специфического времени в прошлом**
 	He **had left** by the time I got there. (or by 8:15 pm)
     
-- **Завершенное прошлое действие, которое имеет видимые результаты **
+- **Завершенное прошлое действие, которое имеет видимые результаты**
 	She was sad because she **had filed** the test.
     
 - **Past Perfect - это эквивалент Present Perfect, только в прошлом**
@@ -50,6 +50,8 @@ published: true
 	They were wet because they **had been walking** in the rain.
     
 - **Past Perfect Continuius - это Present Perfect Continuous, только в прошлом.**
+(She is going to the doctor. Her leg has been aching for two days.)
+She went to the doctor. Her leg **had been aching** for two days.
     
 
     
