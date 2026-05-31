@@ -3,124 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кирилл Ермаков | Backend Developer (PHP → Go)</title>
+    <title>Кирилл Ермаков | Senior PHP Backend Developer → Go</title>
     <style>
+        :root {
+            --primary: #00ADD8;
+            --secondary: #555;
+            --bg: #fafafa;
+            --card: #ffffff;
+            --text: #333;
+            --border: #e0e0e0;
+            --success: #28a745;
+        }
+
         * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text);
+            background: var(--bg);
+            padding: 20px;
+        }
+
+        .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
-            background: #fafafa;
+            background: var(--card);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
         }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+        header {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
         }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+        }
+
         h1 {
-            color: #00ADD8;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            border-bottom: 3px solid #00ADD8;
-            padding-bottom: 10px;
+            font-size: 2.2em;
+            color: var(--primary);
+            margin-bottom: 5px;
         }
+
         .title {
-            font-size: 1.3em;
-            color: #666;
-            margin-bottom: 20px;
+            font-size: 1.2em;
+            color: var(--secondary);
+            font-weight: 400;
+            margin-bottom: 5px;
         }
-        h2 {
-            color: #00ADD8;
-            margin: 30px 0 15px 0;
-            font-size: 1.5em;
+
+        .transition-badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: var(--success);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            border: 1px solid var(--success);
         }
+
         .contact {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
-            margin: 20px 0;
+            margin-top: 15px;
         }
+
         .contact a {
-            color: #00ADD8;
+            color: var(--primary);
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 8px 15px;
             background: #f0f8ff;
-            border-radius: 4px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-size: 0.95em;
         }
-        .contact a:hover { background: #00ADD8; color: white; }
+
+        .contact a:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        section { margin-bottom: 40px; }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+        }
+
         .stack {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin: 15px 0;
         }
+
         .tag {
             background: #e0f7fa;
-            padding: 5px 12px;
+            color: #006064;
+            padding: 8px 15px;
             border-radius: 20px;
             font-size: 0.9em;
-            border: 1px solid #00ADD8;
+            border: 1px solid var(--primary);
         }
-        .project {
+
+        .tag.go {
+            background: #c8e6c9;
+            color: #1b5e20;
+            border-color: var(--success);
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            padding: 20px;
             background: #f9f9f9;
-            padding: 15px;
-            margin: 10px 0;
-            border-left: 4px solid #00ADD8;
-            border-radius: 4px;
+            border-left: 4px solid var(--primary);
+            border-radius: 5px;
         }
-        .project a { color: #00ADD8; text-decoration: none; font-weight: bold; }
+
+        .experience-item h3 {
+            color: var(--text);
+            margin-bottom: 5px;
+        }
+
+        .company {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .date {
+            color: var(--secondary);
+            font-size: 0.9em;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .achievement {
+            color: var(--success);
+            font-weight: 500;
+            margin: 5px 0;
+        }
+
         ul { margin-left: 20px; }
         li { margin: 8px 0; }
-        @media (max-width: 600px) {
-            .container { padding: 20px; }
-            h1 { font-size: 2em; }
+
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .note {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 30px 20px; }
+            h1 { font-size: 1.8em; }
+            header { flex-direction: column; text-align: center; }
+            .contact { justify-content: center; }
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; padding: 40px; }
+            .contact a { background: none; border: 1px solid var(--primary); }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>👋 Кирилл Ермаков</h1>
-    <img src="avatar.png" alt="Фото" style="width: 150px; border-radius: 50%; margin: 20px 0;">
-    <p class="title">Backend Developer (PHP → Go)</p>
+    <!-- Header -->
+    <header>
+        <img src="avatar.png" alt="Кирилл Ермаков" class="avatar">
+        <div>
+            <h1>Кирилл Ермаков</h1>
+            <p class="title">Senior PHP Backend Developer → Go</p>
+            <span class="transition-badge">🚀 9+ лет в PHP/ритейле • Активно практикую Go</span>
+            <div class="contact">
+                <a href="mailto:yermakov.kirill@gmail.com">📧 Email</a>
+                <a href="https://t.me/wheekey17">✈️ Telegram</a>
+                <a href="https://github.com/wheekey">🐙 GitHub</a>
+                <a href="https://www.linkedin.com/in/kirill-yermakov/">💼 LinkedIn</a>
+            </div>
+        </div>
+    </header>
 
-    <div class="contact">
-        <a href="mailto:yermakov.kirill@gmail.com">📧 Email</a>
-        <a href="https://t.me/wheekey17">✈️ Telegram</a>
-        <a href="https://github.com/wheekey">🐙 GitHub</a>
-        <a href="https://www.linkedin.com/in/kirill-yermakov/">💼 LinkedIn</a>
-    </div>
+    <!-- About -->
+    <section>
+        <h2>📝 Обо мне</h2>
+        <p>
+            Senior Backend-разработчик с 9+ годами коммерческого опыта в федеральном ритейле и e-commerce (Лента, Postel Deluxe).
+            Специализируюсь на высоконагруженных системах чекаута, кастомной архитектуре на нативном PHP и обеспечении надёжности
+            распределённых операций. Глубокая экспертиза в оптимизации БД, интеграциях с платёжными провайдерами и мониторинге.
+        </p>
+        <div class="note">
+            <strong>🎯 Вектор:</strong> Перехожу на Go, перенося опыт в надёжности, транзакциях и доменной логике ритейла
+            в production-ready код. Ищу команду, где смогу приносить пользу с первого дня и параллельно расти в языке.
+        </div>
+    </section>
 
-    <h2>🛠 Стек технологий</h2>
-    <div class="stack">
-        <span class="tag">Go</span>
-        <span class="tag">PHP 8</span>
-        <span class="tag">MySQL</span>
-        <span class="tag">Redis</span>
-        <span class="tag">Docker</span>
-        <span class="tag">Git</span>
-        <span class="tag">Linux</span>
-    </div>
+    <!-- Skills -->
+    <section>
+        <h2>🛠 Технологии</h2>
+        <div class="stack">
+            <span class="tag">PHP 8.x (нативный)</span>
+            <span class="tag">OOP, SOLID, Паттерны</span>
+            <span class="tag">Кастомная MVC / Сервисная архитектура</span>
+            <span class="tag">MySQL / PostgreSQL</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git / CI/CD</span>
+            <span class="tag">Linux</span>
+            <span class="tag go">Go (активно практикую)</span>
+            <span class="tag go">HTTP-сервисы, REST API</span>
+            <span class="tag go">PostgreSQL, SQL</span>
+        </div>
+    </section>
 
-    <h2>💼 Опыт работы</h2>
-    <p><strong>5+ лет</strong> разрабатываю бэкенд для e-commerce и финтеха</p>
-    <ul>
-        <li>Проектирование и разработка высоконагруженных систем чекаута и платежей</li>
-        <li>Интеграции с платёжными системами (эквайринг, ОФД, фискализация)</li>
-        <li>Обеспечение надёжности: идемпотентность, retry, reconciliation</li>
-        <li>Оптимизация SQL-запросов и работа с большими таблицами</li>
-        <li>Внедрение наблюдаемости: метрики, логи, трейсинг</li>
-    </ul>
+    <!-- Experience -->
+    <section>
+        <h2>💼 Опыт работы</h2>
 
-    <h2>🎓 Образование</h2>
-    <ul>
-        <li><strong>Название ВУЗа</strong> — Специальность (год окончания)</li>
-        <li><strong>Курсы:</strong> Go, System Design, PostgreSQL и т.д.</li>
-    </ul>
+        <div class="experience-item">
+            <h3>Ведущий PHP-разработчик</h3>
+            <span class="company">Лента (федеральная розничная сеть)</span>
+            <span class="date">Июль 2021 — настоящее время</span>
+            <ul>
+                <li><strong>Архитектура и рефакторинг:</strong> Провёл глубокий рефакторинг монолита: переработал <code>OrderProcessingService</code>, устранил God-объекты в модуле операций, оптимизировал критические SQL-запросы. Обеспечил масштабируемость платёжного модуля для высоконагруженных сценариев.</li>
+                <li><strong>Платёжная система и интеграции:</strong> Участвовал в миграции на современный API шлюза Сбербанка, реализовал пилот по SberPay. Самостоятельно спроектировал и внедрил полную интеграцию аптечной сети «АЛОЭ» (создание заказа → чекаут → фискализация). Исправил системные проблемы с рекуррентными платежами и маркированными товарами.</li>
+                <li><strong>Надёжность и мониторинг:</strong> Внедрил Sentry и кастомные инструменты мониторинга оплат. Автоматизировал рутинные процессы (cron-джобы), что полностью устранило необходимость в ручном дежурстве по расхождениям.</li>
+                <li class="achievement">✅ <strong>Результат:</strong> Снизил расхождения между SAP, ОФД и внутренними системами на <strong>90%</strong> за счёт root-cause анализа и системных исправлений. Сформировал задачи для смежных команд, сократив инциденты на стороне бэкенда.</li>
+                <li><strong>Командная работа:</strong> Координировал взаимодействие с QA, аналитиками и фронтендом. Делился экспертизой по интеграциям, помогал в онбординге. Придерживаюсь принципа: писать чистый, тестируемый код с фокусом на устранение причины ошибок, а не следствия.</li>
+            </ul>
+        </div>
 
+        <div class="experience-item">
+            <h3>Middle PHP Developer</h3>
+            <span class="company">Postel Deluxe</span>
+            <span class="date">Март 2017 — Июнь 2021</span>
+            <ul>
+                <li>Fullstack-разработка интернет-магазина: backend (PHP, кастомная архитектура), frontend (JS/React)</li>
+                <li>Разработка систем статистики, мониторинга цен и анализа нагруженности сайта</li>
+                <li>Автоматизация сбора данных: парсинг и обработка информации (Python/Java + Selenium)</li>
+                <li>Интеграции с внешними API, CRM и системами доставки</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Junior PHP Developer</h3>
+            <span class="company">Postel Deluxe</span>
+            <span class="date">Сентябрь 2015 — Март 2017</span>
+            <ul>
+                <li>Разработка и поддержка модулей интернет-магазина, рефакторинг легаси-кода</li>
+                <li>Написание кастомных скриптов, работа с БД (MySQL), интеграции</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Контент-менеджер / Помощник разработчика</h3>
+            <span class="company">ТекстильТрейд</span>
+            <span class="date">Февраль 2015 — Сентябрь 2015</span>
+            <ul>
+                <li>Автоматизация формирования товарных карточек (VBA)</li>
+                <li>Поддержка и доработка PHP-скриптов, переход к самостоятельной разработке бэкенда</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+        <h2>🎓 Образование</h2>
+        <div class="experience-item">
+            <h3>Магистр: Экономическая кибернетика</h3>
+            <span class="date">2014</span>
+            <p>Харьковский национальный университет им. В.Н. Каразина</p>
+        </div>
+    </section>
 </div>
 </body>
 </html>
