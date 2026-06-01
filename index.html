@@ -80,6 +80,7 @@
             gap: 15px;
             flex-wrap: wrap;
             margin-top: 15px;
+            align-items: center;
         }
 
         .contact a {
@@ -95,6 +96,22 @@
         .contact a:hover {
             background: var(--primary);
             color: white;
+        }
+
+        /* Кнопка скачивания PDF */
+        .btn-print {
+            background: var(--success);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.95em;
+            transition: background 0.3s;
+        }
+
+        .btn-print:hover {
+            background: #218838;
         }
 
         section { margin-bottom: 40px; }
@@ -183,10 +200,39 @@
             .contact { justify-content: center; }
         }
 
+        /* === СТИЛИ ДЛЯ ПЕЧАТИ / PDF === */
         @media print {
-            body { background: white; padding: 0; }
-            .container { box-shadow: none; padding: 40px; }
-            .contact a { background: none; border: 1px solid var(--primary); }
+            body {
+                background: white;
+                padding: 0;
+                font-size: 11pt;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+                max-width: 100%;
+            }
+            .contact a, .btn-print {
+                background: none;
+                border: 1px solid var(--primary);
+                color: var(--primary);
+            }
+            .btn-print { display: none; } /* Скрываем кнопку в PDF */
+            .experience-item {
+                break-inside: avoid; /* Не разрывать блок опыта между страницами */
+            }
+            section {
+                break-inside: avoid;
+                margin-bottom: 20px;
+            }
+            a { text-decoration: none; color: var(--text); }
+            a[href]::after {
+                content: " (" attr(href) ")";
+                font-size: 0.9em;
+                color: var(--secondary);
+            }
+            /* Скрываем декоративные элементы */
+            .transition-badge { border: 1px solid var(--success); }
         }
     </style>
 </head>
@@ -204,6 +250,7 @@
                 <a href="https://t.me/wheekey17">✈️ Telegram</a>
                 <a href="https://github.com/wheekey">🐙 GitHub</a>
                 <a href="https://www.linkedin.com/in/kirill-yermakov/">💼 LinkedIn</a>
+                <button class="btn-print" onclick="window.print()">📥 Скачать PDF</button>
             </div>
         </div>
     </header>
@@ -298,5 +345,13 @@
         </div>
     </section>
 </div>
+
+<!-- Скрипт для плавного скролла после печати (опционально) -->
+<script>
+    // Убираем фокус с кнопки после клика, чтобы не мешал при печати
+    document.querySelector('.btn-print')?.addEventListener('click', function() {
+        setTimeout(() => this.blur(), 100);
+    });
+</script>
 </body>
 </html>
